@@ -11,7 +11,7 @@
     --secondary-accent-color: #ffffff;
     --hover-button-color: #188CE8;
     --primary-background-color: #E5E5E5;
-    --accent-background-color: #2F303A;
+    --accent-background-color: #C4C4C4;
     --accent-section-color: #F5F4FA;
     --text-footer-color: rgba(255, 255, 255, 0.6);
     --border-bottom-color: #ECECEC;  
@@ -60,6 +60,7 @@ body {
 .characteristic .title,
 .essential .title,
 .team .title,
+.clients .title,
 .team .people,
 .example-list .subtitle {
     color: var(--title-text-color);
@@ -155,6 +156,15 @@ body {
 
 .contacts .contacts-link {
     color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contacts .icon {
+   fill: var(--primary-text-color);
+   margin-right: 10px;
 }
 
 .site-nav .link.current,
@@ -173,7 +183,12 @@ body {
 
 .hero {
     background-color: var(--accent-background-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+    background-size: cover;
+    max-width: 1600px;
     text-align: center;
+    margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -238,7 +253,9 @@ body {
 
 .characteristic .dist-list-container {
     min-width: 270px;
-    min-height: 98px;
+    min-height: 248px;
+
+    outline: 2px solid violet;
 }
 
 .characteristic .title {
@@ -252,6 +269,19 @@ body {
     line-height: 1.71;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.characteristic .icon-container {
+    width: 270px;
+    height: 120px;
+    background-color: var(--accent-section-color);
+    margin-bottom: 30px;
+
+    outline: 1px dashed red;
+}
+
+.icon {
+outline: 1px dashed red;
 }
 
 
@@ -270,7 +300,8 @@ body {
 }
 
 .essential .title,
-.team .title {
+.team .title,
+.clients .title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -321,6 +352,15 @@ body {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+
+/*=====П'ЯТА СЕКЦІЯ КЛІЄНТИ=====*/
+
+
+.clients-list {
+    display: flex;
+   
 }
 
 
