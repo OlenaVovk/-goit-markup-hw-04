@@ -1,0 +1,467 @@
+
+
+/*=====ЗАГАЛЬНІ=====*/
+
+
+:root { 
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --logo-color: #000000;
+    --accent-color: #2196F3;
+    --secondary-accent-color: #ffffff;
+    --hover-button-color: #188CE8;
+    --primary-background-color: #E5E5E5;
+    --accent-background-color: #2F303A;
+    --accent-section-color: #F5F4FA;
+    --text-footer-color: rgba(255, 255, 255, 0.6);
+    --border-bottom-color: #ECECEC;  
+    --border-div-color: #EEEEEE;
+    --primary-text-family: Roboto, sans-serif;
+    --accent-text-family: Raleway, sans-serif;
+    
+}
+
+body {
+    font-family: var(--primary-text-family);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    /* outline: 2px solid red; */
+}
+
+.list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.img {
+    display: block;
+}
+
+.characteristic .title,
+.essential .title,
+.team .title,
+.team .people,
+.example-list .subtitle {
+    color: var(--title-text-color);
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+
+/* outline: 2px solid teal; */
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+/* section {
+  outline: 3px solid blueviolet;
+} */
+
+
+ /*=====ШАПКА=====*/
+
+
+
+.header { 
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-bottom-color);
+
+    /* outline: 2px solid blueviolet; */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    background: var(--secondary-accent-color);
+}
+
+.logo {
+    margin-right: 94px;
+    font-family: var(--accent-text-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.accent {
+    color: var(--accent-color); 
+}
+
+.text {
+    color: var(--logo-color);  
+}
+
+.site-nav,
+.contacts {
+    display: flex;
+    align-items: center;
+   
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav .link {
+    color: var(--title-text-color);  
+}
+
+.contacts {
+    margin-left: auto;
+}
+
+.contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+.contacts .contacts-link {
+    color: inherit;
+}
+
+.site-nav .link.current,
+.site-nav .site-nav-link:hover,
+.site-nav .site-nav-link:focus,
+.contacts .contacts-link:hover,
+.contacts .contacts-link:focus {
+    color: var(--accent-color);
+}
+
+
+
+/*=====ПЕРША СЕКЦІЯ ГЕРОЯ=====*/
+
+
+
+.hero {
+    background-color: var(--accent-background-color);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero .main {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--secondary-accent-color);
+    text-transform: uppercase; 
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    /* outline: 2px solid teal; */
+  
+}
+
+.hero .button {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    color: var(--secondary-accent-color);
+    font-family: var(--primary-text-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    padding: 10px 32px;
+    min-width: 216px;
+    border: 0;
+    cursor: pointer;
+ }
+
+ .hero .button:hover,
+ .hero .button:focus {
+    background-color: var(--hover-button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ }
+
+
+
+ /*=====ДРУГА СЕКЦІЯ ХАРАКТЕРИСТИКИ=====*/
+
+
+
+.characteristic {
+    padding-bottom: 0;
+}
+
+.characteristic .distinction-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.characteristic .dist-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.characteristic .dist-list-container {
+    min-width: 270px;
+    min-height: 98px;
+}
+
+.characteristic .title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.characteristic .point {
+    line-height: 1.71;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+/*=====ТРЕТЯ СЕКЦІЯ ДІЯЛЬНІСТЬ I ЧЕТВЕРТА СЕКЦІЯ КОМАНДА=====*/
+
+
+.essential .images-list,
+.team .team-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.essential .images-list {
+    justify-content: space-between;
+}
+
+.essential .title,
+.team .title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+
+
+/*=====ЧЕТВЕРТА СЕКЦІЯ КОМАНДА=====*/
+
+
+.team {
+    background: var(--accent-section-color);
+}
+
+.team .team-list {
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.team .team-list-item {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.team .team-list-container {
+    background: var(--secondary-accent-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.team .people {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team .texts {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+ /*=====ПІДВАЛ САЙТУ=====*/
+
+
+.footer {
+    background-color: var(--accent-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;      
+}
+
+.footer-logo {
+    display: inline-block ;
+    margin-bottom: 20px;
+}
+
+.footer .text {
+    color: var(--secondary-accent-color);
+}
+
+.footer .address { 
+    font-style: normal;
+    line-height: 1.71;
+}
+
+.footer .fact {
+    color: var(--secondary-accent-color);
+    text-decoration: none;
+    font-style: normal;
+}
+
+.address-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer .mail,
+.footer .tel {
+    color: var(--text-footer-color);
+    text-decoration: none;
+    font-style: normal;
+}
+
+.footer .mail:hover,
+.footer .mail:focus,
+.footer .tel:hover,
+.footer .tel:focus {
+    color: var(--accent-color);
+}
+ 
+
+
+/*=====ПОРТФОЛІО=====*/
+
+
+.portfolio .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+} 
+
+.buttons .port-btn-list-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.buttons .port-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63; 
+    background-color: var(--accent-section-color);
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    padding: 6px 22px;     
+}
+
+.buttons .button-all {
+    min-width: 74px;
+}
+
+.buttons .button-veb {
+    min-width: 124px;
+}
+
+.buttons .button-app{
+    min-width: 112px;
+}
+
+.buttons .button-des{
+    min-width: 104px;
+}
+
+.buttons .button-mar{
+    min-width: 130px;
+}
+
+.buttons .port-btn:hover,
+.buttons .port-btn:focus {
+    background: var(--accent-color);
+    color: var(--secondary-accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.example-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.port-list-item {
+    flex-basis: calc((100% - 90px)/ 3);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.port-wrapper {
+    border: 1px solid var(--border-div-color);
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.example-list .subtitle {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    margin-top: 0;
+     
+/* outline: 2px solid teal; */
+}
+
+.example-list .lists {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
