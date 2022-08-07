@@ -12,6 +12,7 @@
     --hover-button-color: #188CE8;
     --primary-background-color: #E5E5E5;
     --accent-background-color: #C4C4C4;
+    --footer-background-color: #2F303A;
     --accent-section-color: #F5F4FA;
     --text-footer-color: rgba(255, 255, 255, 0.6);
     --border-bottom-color: #ECECEC;  
@@ -259,7 +260,8 @@ outline: 2px solid teal;
     outline: 2px solid orange;
 }
 
-.characteristic .title {
+.characteristic .title,
+.footer .title {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -354,15 +356,15 @@ outline: 1px dashed red;
     margin-top: 0;
     margin-bottom: 16px;
 }
+ 
+.team .social-networks {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
 
- .social-networks {
- display: flex;
- padding-left: 30px;
- padding-right: 30px;
- justify-content: space-between;
 
-
- outline: 1px dashed darkred;
+    outline: 1px dashed darkred;
 }
 
 .team .social-network-link,
@@ -410,7 +412,7 @@ outline: 1px dashed red;
 
 
 .footer {
-    background-color: var(--accent-background-color);
+    background-color: var(--footer-background-color);
     padding-top: 60px;
     padding-bottom: 60px;      
 }
@@ -419,21 +421,35 @@ outline: 1px dashed red;
     display: flex;
 }
 
+.footer .footer-nav {
+    margin-right: 70px;
+}
+
 .footer .footer-social-networks {
-    margin-left: 70px;
-    min-width 206px;
-    min-height 80px;
+    min-width: 206px;
+    min-height: 80px;
 
     outline: 1px solid white;
 }
 
-.footer .social-network-link {
+.footer .social-networks {
+     display: flex;
+     justify-content: space-between;
 
+
+     outline: 1px dashed darkred;
 }
 
-.footer-logo {
+.footer .title {
+    margin-bottom: 20px;
+    color: var(--secondary-accent-color);
+}
+
+
+.footer .footer-logo {
     display: inline-block ;
     margin-bottom: 20px;
+
 }
 
 .footer .text {
@@ -471,6 +487,7 @@ outline: 1px dashed red;
 
 .footer .social-network-link {
     background: rgba(255, 255, 255, 0.1);
+    
 
 }
 /*=====ПОРТФОЛІО=====*/
