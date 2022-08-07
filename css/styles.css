@@ -16,6 +16,7 @@
     --text-footer-color: rgba(255, 255, 255, 0.6);
     --border-bottom-color: #ECECEC;  
     --border-div-color: #EEEEEE;
+    --border-accent-color: #AFB1B8;
     --primary-text-family: Roboto, sans-serif;
     --accent-text-family: Raleway, sans-serif;
     
@@ -39,7 +40,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    /* outline: 2px solid red; */
+    outline: 2px solid red; 
 }
 
 .list {
@@ -68,7 +69,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 
-/* outline: 2px solid teal; */
+outline: 2px solid teal; 
 }
 
 .visually-hidden {
@@ -82,9 +83,9 @@ body {
     clip: rect(0 0 0 0);
 }
 
-/* section {
+ section {
   outline: 3px solid blueviolet;
-} */
+} 
 
 
  /*=====ШАПКА=====*/
@@ -96,7 +97,7 @@ body {
     padding-bottom: 24px;
     border-bottom: 1px solid var(--border-bottom-color);
 
-    /* outline: 2px solid blueviolet; */
+    outline: 2px solid blueviolet; 
 }
 
 .header-container {
@@ -206,7 +207,7 @@ body {
     margin-right: auto;
     margin-bottom: 30px;
 
-    /* outline: 2px solid teal; */
+    outline: 2px solid teal; 
   
 }
 
@@ -255,7 +256,7 @@ body {
     min-width: 270px;
     min-height: 248px;
 
-    outline: 2px solid violet;
+    outline: 2px solid orange;
 }
 
 .characteristic .title {
@@ -351,19 +352,59 @@ outline: 1px dashed red;
     line-height: 1.19;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
 }
+
+ .social-networks {
+ display: flex;
+ padding-left: 30px;
+ padding-right: 30px;
+ justify-content: space-between;
+
+
+ outline: 1px dashed darkred;
+}
+
+.team .social-network-link,
+.footer .social-network-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    
+}
+
+.team .social-network-link:hover,
+.team .social-network-link:focus,
+.footer .social-network-link:hover,
+.footer .social-network-link:focus {
+    background-color: var(--accent-color);
+}
+
 
 
 /*=====П'ЯТА СЕКЦІЯ КЛІЄНТИ=====*/
 
 
-.clients-list {
+.clients .clients-list {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
    
 }
 
+.clients .clients-list-link {
+    display: block;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--border-accent-color);
+    border-radius: 4px;
+}
 
+.clients .clients-list-link:hover,
+.clients .clients-list-link:focus {
+    border: 1px solid var(--accent-color);
+}
 
  /*=====ПІДВАЛ САЙТУ=====*/
 
@@ -372,6 +413,22 @@ outline: 1px dashed red;
     background-color: var(--accent-background-color);
     padding-top: 60px;
     padding-bottom: 60px;      
+}
+
+.footer .container {
+    display: flex;
+}
+
+.footer .footer-social-networks {
+    margin-left: 70px;
+    min-width 206px;
+    min-height 80px;
+
+    outline: 1px solid white;
+}
+
+.footer .social-network-link {
+
 }
 
 .footer-logo {
@@ -411,9 +468,11 @@ outline: 1px dashed red;
 .footer .tel:focus {
     color: var(--accent-color);
 }
- 
 
+.footer .social-network-link {
+    background: rgba(255, 255, 255, 0.1);
 
+}
 /*=====ПОРТФОЛІО=====*/
 
 
@@ -476,6 +535,15 @@ outline: 1px dashed red;
     flex-basis: calc((100% - 90px)/ 3);
     margin-left: 30px;
     margin-top: 30px;
+
+
+    /*outline: 2px solid teal;*/
+}
+
+.port-link:hover,
+.port-link:focus {
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .port-wrapper {
@@ -485,6 +553,8 @@ outline: 1px dashed red;
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
+
+   /* outline: 2px solid #2196F3;*/
 }
 
 .example-list .subtitle {
@@ -494,7 +564,7 @@ outline: 1px dashed red;
     margin-bottom: 4px;
     margin-top: 0;
      
-/* outline: 2px solid teal; */
+   /*outline: 2px solid teal; */
 }
 
 .example-list .lists {
