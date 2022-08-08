@@ -17,7 +17,7 @@
     --text-footer-color: rgba(255, 255, 255, 0.6);
     --border-bottom-color: #ECECEC;  
     --border-div-color: #EEEEEE;
-    --border-accent-color: #AFB1B8;
+    --icon-color: #AFB1B8;
     --primary-text-family: Roboto, sans-serif;
     --accent-text-family: Raleway, sans-serif;
     
@@ -41,7 +41,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 2px solid red; 
+    /*outline: 2px solid red; */
 }
 
 .list {
@@ -70,7 +70,32 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 
-outline: 2px solid teal; 
+/*outline: 2px solid teal; */
+}
+
+.essential .images-list,
+.team .team-list,
+.clients .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.essential .title,
+.team .title,
+.clients .title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.characteristic .title,
+.footer .title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .visually-hidden {
@@ -84,13 +109,15 @@ outline: 2px solid teal;
     clip: rect(0 0 0 0);
 }
 
- section {
+/*section {
   outline: 3px solid blueviolet;
 } 
 
 .icon {
     outline: 1px dashed red;
-}
+}*/
+
+
 
  /*=====ШАПКА=====*/
 
@@ -101,7 +128,7 @@ outline: 2px solid teal;
     padding-bottom: 24px;
     border-bottom: 1px solid var(--border-bottom-color);
 
-    outline: 2px solid blueviolet; 
+    /*outline: 2px solid blueviolet; */
 }
 
 .header-container {
@@ -167,7 +194,7 @@ outline: 2px solid teal;
 
 }
 
-.contacts .icon {
+.contacts .contacts-icon {
    fill: var(--primary-text-color);
    margin-right: 10px;
 }
@@ -180,6 +207,9 @@ outline: 2px solid teal;
     color: var(--accent-color);
 }
 
+.contacts .contacts-link:hover .contacts-icon {
+   fill: var(--accent-color);
+}
 
 
 /*=====ПЕРША СЕКЦІЯ ГЕРОЯ=====*/
@@ -211,7 +241,7 @@ outline: 2px solid teal;
     margin-right: auto;
     margin-bottom: 30px;
 
-    outline: 2px solid teal; 
+    /*outline: 2px solid teal; */
   
 }
 
@@ -260,15 +290,19 @@ outline: 2px solid teal;
     min-width: 270px;
     min-height: 248px;
 
-    outline: 2px solid orange;
+   /* outline: 2px solid rgb(89, 234, 5);*/
 }
 
-.characteristic .title,
-.footer .title {
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+.characteristic .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--accent-section-color);
+    margin-bottom: 30px;
+
+    /*outline: 1px dashed rgb(179, 17, 220);*/
 }
 
 .characteristic .point {
@@ -277,41 +311,15 @@ outline: 2px solid teal;
     margin-bottom: 0;
 }
 
-.characteristic .icon-container {
-    width: 270px;
-    height: 120px;
-    background-color: var(--accent-section-color);
-    margin-bottom: 30px;
-
-    outline: 1px dashed red;
-}
 
 
-
-
-
-/*=====ТРЕТЯ СЕКЦІЯ ДІЯЛЬНІСТЬ I ЧЕТВЕРТА СЕКЦІЯ КОМАНДА=====*/
-
-
-.essential .images-list,
-.team .team-list {
-    display: flex;
-    flex-wrap: wrap;
-}
+/*=====ТРЕТЯ СЕКЦІЯ ДІЯЛЬНІСТЬ=====*/
+ 
 
 .essential .images-list {
     justify-content: space-between;
 }
 
-.essential .title,
-.team .title,
-.clients .title {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-}
 
 
 
@@ -365,12 +373,14 @@ outline: 2px solid teal;
     justify-content: space-between;
 
 
-    outline: 1px dashed darkred;
+   /* outline: 1px dashed darkred;*/
 }
 
 .team .social-network-link,
 .footer .social-network-link {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -384,30 +394,49 @@ outline: 2px solid teal;
     background-color: var(--accent-color);
 }
 
+.team .social-network-icon {
+    fill: var(--icon-color);
+}
+
+.team .social-network-link:hover .social-network-icon,
+.team .social-network-link:focus .social-network-icon {
+    fill: var(--secondary-accent-color);
+}
+
+
 
 
 /*=====П'ЯТА СЕКЦІЯ КЛІЄНТИ=====*/
 
 
 .clients .clients-list {
-    display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-   
 }
 
 .clients .clients-list-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
-    border: 1px solid var(--border-accent-color);
+    border: 1px solid var(--icon-color);
     border-radius: 4px;
+}
+
+.clients .clients-list-icon {
+    fill: var(--icon-color);
 }
 
 .clients .clients-list-link:hover,
 .clients .clients-list-link:focus {
     border: 1px solid var(--accent-color);
 }
+
+.clients .clients-list-link:hover .clients-list-icon,
+.clients .clients-list-link:focus .clients-list-icon {
+    fill: var(--accent-color);
+}
+
 
  /*=====ПІДВАЛ САЙТУ=====*/
 
@@ -430,15 +459,7 @@ outline: 2px solid teal;
     min-width: 206px;
     min-height: 80px;
 
-    outline: 1px solid white;
-}
-
-.footer .social-networks {
-     display: flex;
-     justify-content: space-between;
-
-
-     outline: 1px dashed darkred;
+   /* outline: 1px solid white;*/
 }
 
 .footer .title {
@@ -486,10 +507,24 @@ outline: 2px solid teal;
     color: var(--accent-color);
 }
 
+.footer .social-networks {
+    display: flex;
+    justify-content: space-between;
+
+
+    /*outline: 1px dashed darkred;*/
+}
+
 .footer .social-network-link {
     background: rgba(255, 255, 255, 0.1);
 
 }
+
+.footer .social-network-icon {
+    fill: var(--secondary-accent-color);
+}
+
+
 
 
 
@@ -593,17 +628,4 @@ outline: 2px solid teal;
     line-height: 1.88;
     margin-top: 0;
     margin-bottom: 0;
-}
-
-
-
-
-/*=====ПРОСТО ПРИКЛАД=====*/
-
-
-.example-title::before {
-    content: "";
-    width: 50px;
-    height: 50px;
-    background-image: url(../images/clock.svg);
 }
