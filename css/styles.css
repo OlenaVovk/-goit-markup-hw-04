@@ -88,6 +88,9 @@ outline: 2px solid teal;
   outline: 3px solid blueviolet;
 } 
 
+.icon {
+    outline: 1px dashed red;
+}
 
  /*=====ШАПКА=====*/
 
@@ -283,9 +286,7 @@ outline: 2px solid teal;
     outline: 1px dashed red;
 }
 
-.icon {
-outline: 1px dashed red;
-}
+
 
 
 
@@ -487,9 +488,11 @@ outline: 1px dashed red;
 
 .footer .social-network-link {
     background: rgba(255, 255, 255, 0.1);
-    
 
 }
+
+
+
 /*=====ПОРТФОЛІО=====*/
 
 
@@ -592,3 +595,15 @@ outline: 1px dashed red;
     margin-bottom: 0;
 }
 
+
+
+
+/*=====ПРОСТО ПРИКЛАД=====*/
+
+
+.example-title::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/clock.svg);
+}
