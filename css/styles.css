@@ -64,6 +64,7 @@ body {
 .team .title,
 .clients .title,
 .team .people,
+.footer .title,
 .example-list .subtitle {
     color: var(--title-text-color);
     font-weight: 700;
@@ -174,6 +175,9 @@ body {
 }
 
 .site-nav .link {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
     color: var(--title-text-color);  
 }
 
@@ -191,7 +195,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .contacts .contacts-icon {
@@ -449,6 +454,7 @@ body {
 
 .footer .container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer .footer-nav {
